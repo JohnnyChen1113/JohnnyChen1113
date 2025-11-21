@@ -1,20 +1,231 @@
 {
+  "profile": {
+    "name": "Junhao Chen",
+    "googleScholarId": "9mseKH8AAAAJ",
+    "googleScholarUrl": "https://scholar.google.com/citations?user=9mseKH8AAAAJ",
+    "orcid": "0000-0002-7375-0211"
+  },
   "publications": [
     {
-      "title": "Example Paper Title",
-      "authors": ["Author One", "Johnny Chen", "Author Three"],
-      "venue": "Conference Name (e.g., NeurIPS, ICML)",
-      "year": 2024,
+      "title": "The water lily genome and the early evolution of flowering plants",
+      "authors": "L Zhang, F Chen, X Zhang, Z Li, Y Zhao, R Lohaus, X Chang, W Dong, ...",
+      "venue": "Nature",
+      "volume": "577 (7788), 79-84",
+      "year": 2020,
+      "citations": 383,
       "links": {
-        "pdf": "",
-        "doi": "",
-        "code": "",
-        "arxiv": ""
-      },
-      "citations": 0
+        "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=9mseKH8AAAAJ&citation_for_view=9mseKH8AAAAJ:UeHWp8X0CEIC"
+      }
+    },
+    {
+      "title": "The sequenced angiosperm genomes and genome databases",
+      "authors": "F Chen, W Dong, J Zhang, X Guo, J Chen, Z Wang, Z Lin, H Tang, ...",
+      "venue": "Frontiers in Plant Science",
+      "volume": "9, 418",
+      "year": 2018,
+      "citations": 164,
+      "links": {
+        "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=9mseKH8AAAAJ&citation_for_view=9mseKH8AAAAJ:u5HHmVD_uO8C"
+      }
+    },
+    {
+      "title": "Genome sequences of horticultural plants: past, present, and future",
+      "authors": "F Chen, Y Song, X Li, J Chen, L Mo, X Zhang, Z Lin, L Zhang",
+      "venue": "Horticulture Research",
+      "volume": "6",
+      "year": 2019,
+      "citations": 149,
+      "links": {
+        "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=9mseKH8AAAAJ&citation_for_view=9mseKH8AAAAJ:qjMakFHDy7sC"
+      }
+    },
+    {
+      "title": "The chromosome-level quality genome provides insights into the evolution of the biosynthesis genes for aroma compounds of Osmanthus fragrans",
+      "authors": "X Yang, Y Yue, H Li, W Ding, G Chen, T Shi, J Chen, MS Park, F Chen, ...",
+      "venue": "Horticulture Research",
+      "volume": "5",
+      "year": 2018,
+      "citations": 118,
+      "links": {
+        "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=9mseKH8AAAAJ&citation_for_view=9mseKH8AAAAJ:9yKSN-GCB0IC"
+      }
+    },
+    {
+      "title": "Colchicine-Induced Polyploidy in Rhododendron fortunei Lindl",
+      "authors": "L Mo, J Chen, X Lou, Q Xu, R Dong, Z Tong, H Huang, E Lin",
+      "venue": "Plants",
+      "volume": "9 (4), 424",
+      "year": 2020,
+      "citations": 67,
+      "links": {
+        "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=9mseKH8AAAAJ&citation_for_view=9mseKH8AAAAJ:Y0pCki6q_DkC"
+      }
+    },
+    {
+      "title": "Induction and characterization of polyploids from seeds of Rhododendron fortunei Lindl.",
+      "authors": "MO Lan, C Fei, XU Qiang-wei, T Zai-kang, D Ren-hui, LOU Xiong-zhen, ...",
+      "venue": "Journal of Integrative Agriculture",
+      "volume": "19 (8), 2016-2026",
+      "year": 2020,
+      "citations": 42,
+      "links": {
+        "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=9mseKH8AAAAJ&citation_for_view=9mseKH8AAAAJ:eQOLeE2rZwMC"
+      }
+    },
+    {
+      "title": "Portal of Juglandaceae: A comprehensive platform for Juglandaceae study",
+      "authors": "W Guo, J Chen, J Li, J Huang, Z Wang, KJ Lim",
+      "venue": "Horticulture Research",
+      "volume": "7",
+      "year": 2020,
+      "citations": 40,
+      "links": {
+        "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=9mseKH8AAAAJ&citation_for_view=9mseKH8AAAAJ:IjCSPb-OGe4C"
+      }
+    },
+    {
+      "title": "The genome sequence of star fruit (Averrhoa carambola)",
+      "authors": "S Wu, W Sun, Z Xu, J Zhai, X Li, C Li, D Zhang, X Wu, L Shen, J Chen, ...",
+      "venue": "Horticulture Research",
+      "volume": "7",
+      "year": 2020,
+      "citations": 26,
+      "links": {
+        "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=9mseKH8AAAAJ&citation_for_view=9mseKH8AAAAJ:YsMSGLbcyi4C"
+      }
+    },
+    {
+      "title": "Genomics: cracking the mysteries of walnuts",
+      "authors": "F Chen, J Chen, Z Wang, J Zhang, X Li, M Lin, Y Song, L Zhang",
+      "venue": "Journal of Genetics",
+      "volume": "98 (2), 33",
+      "year": 2019,
+      "citations": 18,
+      "links": {
+        "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=9mseKH8AAAAJ&citation_for_view=9mseKH8AAAAJ:2osOgNQ5qMEC"
+      }
+    },
+    {
+      "title": "Identification and Analysis of the AP2 Subfamily Transcription Factors in the Pecan (Carya illinoinensis)",
+      "authors": "Z Yang, H Jin, J Chen, C Li, J Wang, J Luo, Z Wang",
+      "venue": "International Journal of Molecular Sciences",
+      "volume": "22 (24), 13568",
+      "year": 2021,
+      "citations": 12,
+      "links": {
+        "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=9mseKH8AAAAJ&citation_for_view=9mseKH8AAAAJ:WF5omc3nYNoC"
+      }
+    },
+    {
+      "title": "Selection pressure causes differentiation of the SPL gene family in the Juglandaceae",
+      "authors": "D Wu, J Luo, J Chen, L Zhang, KJ Lim, Z Wang",
+      "venue": "Molecular Genetics and Genomics",
+      "volume": "294 (4), 1037-1048",
+      "year": 2019,
+      "citations": 9,
+      "links": {
+        "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=9mseKH8AAAAJ&citation_for_view=9mseKH8AAAAJ:W7OEmFMy1HYC"
+      }
+    },
+    {
+      "title": "DataColor: unveiling biological data relationships through distinctive color mapping",
+      "authors": "S He, W Dong, J Chen, J Zhang, W Lin, S Yang, D Xu, Y Zhou, B Miao, ...",
+      "venue": "Horticulture Research",
+      "volume": "11 (2), uhad273",
+      "year": 2024,
+      "citations": 8,
+      "links": {
+        "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=9mseKH8AAAAJ&citation_for_view=9mseKH8AAAAJ:LkGwnXOMwfcC"
+      }
+    },
+    {
+      "title": "realDB: a genome and transcriptome resource for the red algae (phylum Rhodophyta)",
+      "authors": "F Chen, J Zhang, J Chen, X Li, W Dong, J Hu, M Lin, Y Liu, G Li, Z Wang, ...",
+      "venue": "Database",
+      "volume": "2018, bay072",
+      "year": 2018,
+      "citations": 8,
+      "links": {
+        "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=9mseKH8AAAAJ&citation_for_view=9mseKH8AAAAJ:u-x6o8ySG0sC"
+      }
+    },
+    {
+      "title": "PhyloForge: Unifying Micro- and Macroevolution With Comprehensive Genomic Signals",
+      "authors": "Ya Wang, Wei Dong, Yufan Liang, Weiwei Lin, Junhao Chen, Robert Henry, F Chen",
+      "venue": "Molecular Ecology Resources",
+      "volume": "",
+      "year": 2024,
+      "citations": 7,
+      "links": {
+        "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=9mseKH8AAAAJ&citation_for_view=9mseKH8AAAAJ:Se3iqnhoufwC"
+      }
+    },
+    {
+      "title": "Reassessment of Annamocarya sinesis (Carya sinensis) Taxonomy through Concatenation and Coalescence Phylogenetic Analysis",
+      "authors": "J Luo, J Chen, W Guo, Z Yang, KJ Lim, Z Wang",
+      "venue": "Plants",
+      "volume": "11 (1), 52",
+      "year": 2021,
+      "citations": 6,
+      "links": {
+        "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=9mseKH8AAAAJ&citation_for_view=9mseKH8AAAAJ:ufrVoPGSRksC"
+      }
+    },
+    {
+      "title": "MGH: a genome hub for the medicinal plant maca (Lepidium meyenii)",
+      "authors": "J Chen, J Zhang, M Lin, W Dong, X Guo, Y Dong, Z Wang, L Zhang, ...",
+      "venue": "Database",
+      "volume": "2018, bay113",
+      "year": 2018,
+      "citations": 5,
+      "links": {
+        "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=9mseKH8AAAAJ&citation_for_view=9mseKH8AAAAJ:d1gkVwhDpl0C"
+      }
+    },
+    {
+      "title": "GROP: A genomic information repository for oilplants",
+      "authors": "W Guo, H Jin, J Chen, J Huang, D Zheng, Z Cheng, X Liu, Z Yang, F Chen, ...",
+      "venue": "Frontiers in Plant Science",
+      "volume": "13, 1023938",
+      "year": 2022,
+      "citations": 1,
+      "links": {
+        "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=9mseKH8AAAAJ&citation_for_view=9mseKH8AAAAJ:_FxGoFyzp5QC"
+      }
+    },
+    {
+      "title": "Water lily pond: a multiomics database for water lilies",
+      "authors": "",
+      "venue": "Horticulture Research",
+      "volume": "12 (Issue 6)",
+      "year": 2025,
+      "citations": 0,
+      "links": {
+        "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=9mseKH8AAAAJ&citation_for_view=9mseKH8AAAAJ:0EnyYjriUFMC"
+      }
+    },
+    {
+      "title": "Chromosome-level subgenome-aware de novo assembly of Saccharomyces bayanus provides insight into genome divergence after hybridization",
+      "authors": "C Gardner, J Chen, C Hadfield, Z Lu, D Debruin, Y Zhan, M Donlin, ...",
+      "venue": "Genome Research",
+      "volume": "gr. 279364.124",
+      "year": 2024,
+      "citations": 0,
+      "links": {
+        "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=9mseKH8AAAAJ&citation_for_view=9mseKH8AAAAJ:UebtZRa9Y70C"
+      }
+    },
+    {
+      "title": "Transcriptome-wide expression landscape and starch synthesis pathway co-expression network in sorghum",
+      "authors": "Z Hu, J Chen, MO Olatoye, H Zhang, Z Lin",
+      "venue": "The Plant Genome",
+      "volume": "17 (2), e20448",
+      "year": 2024,
+      "citations": 0,
+      "links": {
+        "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=9mseKH8AAAAJ&citation_for_view=9mseKH8AAAAJ:hqOjcs7Dif8C"
+      }
     }
   ],
-  "lastUpdated": "2024-01-01",
-  "googleScholarId": "9mseKH8AAAAJ",
-  "googleScholarUrl": "https://scholar.google.com/citations?user=9mseKH8AAAAJ"
+  "lastUpdated": "2024-11-21"
 }
