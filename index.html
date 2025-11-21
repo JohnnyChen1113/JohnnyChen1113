@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Johnny Chen - Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">Johnny Chen</a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#content" class="nav-link">Portfolio</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Hi, I'm <span class="highlight">Johnny Chen</span></h1>
+                <p class="tagline">Researcher | Developer | Innovator</p>
+                <p class="description">Welcome to my personal portfolio. Here you can find my academic publications, projects, and the tools I use daily.</p>
+                <div class="hero-buttons">
+                    <a href="#content" class="btn btn-primary">View Portfolio</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="avatar-placeholder">
+                    <i class="fas fa-user"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>A brief introduction about yourself. You can update this section with your personal bio, research interests, and professional background.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content with Tabs -->
+    <section id="content" class="content-section">
+        <div class="container">
+            <h2 class="section-title">Portfolio</h2>
+
+            <!-- Tabs Navigation -->
+            <div class="tabs-container">
+                <div class="tabs-nav">
+                    <button class="tab-btn active" data-tab="resume">
+                        <i class="fas fa-file-alt"></i>
+                        <span>Resume</span>
+                    </button>
+                    <button class="tab-btn" data-tab="publications">
+                        <i class="fas fa-book"></i>
+                        <span>Publications</span>
+                    </button>
+                    <button class="tab-btn" data-tab="projects">
+                        <i class="fas fa-project-diagram"></i>
+                        <span>Projects</span>
+                    </button>
+                    <button class="tab-btn" data-tab="tools">
+                        <i class="fas fa-tools"></i>
+                        <span>Tools</span>
+                    </button>
+                </div>
+
+                <!-- Tabs Content -->
+                <div class="tabs-content">
+                    <!-- Resume Tab -->
+                    <div class="tab-panel active" id="resume">
+                        <div class="resume-container">
+                            <div class="resume-placeholder">
+                                <i class="fas fa-cloud-upload-alt"></i>
+                                <h3>Resume</h3>
+                                <p>Your resume will be displayed here.</p>
+                                <p class="hint">Upload your resume PDF to display it here.</p>
+                                <!-- When you have a resume PDF, uncomment and update the following -->
+                                <!-- <embed src="resume.pdf" type="application/pdf" width="100%" height="600px" /> -->
+                                <!-- Or use a download link -->
+                                <!-- <a href="resume.pdf" class="btn btn-primary" download>Download Resume</a> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Publications Tab -->
+                    <div class="tab-panel" id="publications">
+                        <div class="publications-list">
+                            <div class="publication-item">
+                                <div class="pub-year">2024</div>
+                                <div class="pub-content">
+                                    <h4 class="pub-title">Example Paper Title</h4>
+                                    <p class="pub-authors">Author 1, <strong>Johnny Chen</strong>, Author 3</p>
+                                    <p class="pub-venue">Conference/Journal Name, 2024</p>
+                                    <div class="pub-links">
+                                        <a href="#" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+                                        <a href="#" class="pub-link"><i class="fas fa-link"></i> DOI</a>
+                                        <a href="#" class="pub-link"><i class="fab fa-github"></i> Code</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="publication-item">
+                                <div class="pub-year">2023</div>
+                                <div class="pub-content">
+                                    <h4 class="pub-title">Another Research Paper</h4>
+                                    <p class="pub-authors"><strong>Johnny Chen</strong>, Co-author</p>
+                                    <p class="pub-venue">Workshop/Symposium Name, 2023</p>
+                                    <div class="pub-links">
+                                        <a href="#" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+                                        <a href="#" class="pub-link"><i class="fas fa-link"></i> DOI</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p class="placeholder-note">Add your publications by editing this section.</p>
+                        </div>
+                    </div>
+
+                    <!-- Projects Tab -->
+                    <div class="tab-panel" id="projects">
+                        <div class="projects-grid">
+                            <div class="project-card">
+                                <div class="project-icon">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <h4 class="project-title">Project Name 1</h4>
+                                <p class="project-desc">A brief description of your project. What problem does it solve? What technologies did you use?</p>
+                                <div class="project-tags">
+                                    <span class="tag">Python</span>
+                                    <span class="tag">Machine Learning</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="project-card">
+                                <div class="project-icon">
+                                    <i class="fas fa-brain"></i>
+                                </div>
+                                <h4 class="project-title">Project Name 2</h4>
+                                <p class="project-desc">Another project description. Highlight the key features and your contributions.</p>
+                                <div class="project-tags">
+                                    <span class="tag">Deep Learning</span>
+                                    <span class="tag">PyTorch</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="project-card">
+                                <div class="project-icon">
+                                    <i class="fas fa-database"></i>
+                                </div>
+                                <h4 class="project-title">Project Name 3</h4>
+                                <p class="project-desc">Description of another project you're working on or have completed.</p>
+                                <div class="project-tags">
+                                    <span class="tag">Data Science</span>
+                                    <span class="tag">SQL</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+
+                            <p class="placeholder-note full-width">Add your projects by editing this section.</p>
+                        </div>
+                    </div>
+
+                    <!-- Tools Tab -->
+                    <div class="tab-panel" id="tools">
+                        <div class="tools-container">
+                            <div class="tools-category">
+                                <h4><i class="fas fa-laptop-code"></i> Development</h4>
+                                <div class="tools-list">
+                                    <div class="tool-item">
+                                        <i class="fab fa-python"></i>
+                                        <span>Python</span>
+                                    </div>
+                                    <div class="tool-item">
+                                        <i class="fab fa-js"></i>
+                                        <span>JavaScript</span>
+                                    </div>
+                                    <div class="tool-item">
+                                        <i class="fab fa-git-alt"></i>
+                                        <span>Git</span>
+                                    </div>
+                                    <div class="tool-item">
+                                        <i class="fab fa-docker"></i>
+                                        <span>Docker</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tools-category">
+                                <h4><i class="fas fa-brain"></i> AI/ML</h4>
+                                <div class="tools-list">
+                                    <div class="tool-item">
+                                        <i class="fas fa-fire"></i>
+                                        <span>PyTorch</span>
+                                    </div>
+                                    <div class="tool-item">
+                                        <i class="fas fa-chart-line"></i>
+                                        <span>TensorFlow</span>
+                                    </div>
+                                    <div class="tool-item">
+                                        <i class="fas fa-robot"></i>
+                                        <span>Hugging Face</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tools-category">
+                                <h4><i class="fas fa-desktop"></i> Applications</h4>
+                                <div class="tools-list">
+                                    <div class="tool-item">
+                                        <i class="fab fa-github"></i>
+                                        <span>GitHub</span>
+                                    </div>
+                                    <div class="tool-item">
+                                        <i class="fas fa-code"></i>
+                                        <span>VS Code</span>
+                                    </div>
+                                    <div class="tool-item">
+                                        <i class="fas fa-terminal"></i>
+                                        <span>Terminal</span>
+                                    </div>
+                                    <div class="tool-item">
+                                        <i class="fas fa-feather-alt"></i>
+                                        <span>Notion</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p class="placeholder-note">Customize this section with your frequently used tools.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-content">
+                <p>Feel free to reach out to me!</p>
+                <div class="social-links">
+                    <a href="https://github.com/JohnnyChen1113" class="social-link" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fas fa-graduation-cap"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Johnny Chen. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
