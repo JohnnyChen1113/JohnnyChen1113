@@ -1,0 +1,20 @@
+{
+  "publications": [
+    {
+      "title": "Example Paper Title",
+      "authors": ["Author One", "Johnny Chen", "Author Three"],
+      "venue": "Conference Name (e.g., NeurIPS, ICML)",
+      "year": 2024,
+      "links": {
+        "pdf": "",
+        "doi": "",
+        "code": "",
+        "arxiv": ""
+      },
+      "citations": 0
+    }
+  ],
+  "lastUpdated": "2024-01-01",
+  "googleScholarId": "9mseKH8AAAAJ",
+  "googleScholarUrl": "https://scholar.google.com/citations?user=9mseKH8AAAAJ"
+}
