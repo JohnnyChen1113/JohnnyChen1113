@@ -519,3 +519,30 @@ a {
         width: 100%;
     }
 }
+
+/* ===== Citation Count ===== */
+.citation-count {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    margin-left: 0.5rem;
+}
+
+.citation-count i {
+    margin-right: 0.25rem;
+}
+
+.citation-count.highlight {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+/* ===== Featured Publication ===== */
+.publication-item.featured {
+    background: linear-gradient(135deg, rgba(30, 64, 175, 0.05) 0%, rgba(59, 130, 246, 0.05) 100%);
+    border-left-color: #f59e0b;
+    border-left-width: 4px;
+}
+
+.publication-item.featured .pub-title {
+    color: var(--primary-color);
+}
