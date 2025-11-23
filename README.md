@@ -1,4 +1,4 @@
-## Hi there 👋
+## find me here: https://johnnychen1113.github.io/JohnnyChen1113/index.html
 
 <!--
 **JohnnyChen1113/JohnnyChen1113** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
