@@ -726,6 +726,11 @@ a {
     border-color: var(--primary-color);
 }
 
+.publication-item.hidden,
+.year-divider.hidden {
+    display: none;
+}
+
 /* ===== Stats Container ===== */
 .stats-container {
     display: flex;
