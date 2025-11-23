@@ -546,3 +546,127 @@ a {
 .publication-item.featured .pub-title {
     color: var(--primary-color);
 }
+
+/* ===== Page Section (for multi-page layout) ===== */
+.page-section {
+    padding-top: 100px;
+    min-height: calc(100vh - 150px);
+}
+
+/* ===== Year Divider ===== */
+.year-divider {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    padding: 1rem 0 0.5rem;
+    margin-top: 1rem;
+    border-bottom: 2px solid var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.year-divider:first-child {
+    margin-top: 0;
+}
+
+/* ===== About Content ===== */
+.about-content {
+    background: var(--background-alt);
+    padding: 2rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--primary-color);
+}
+
+.about-content p {
+    color: var(--text-secondary);
+    line-height: 1.8;
+}
+
+/* ===== Section Intro ===== */
+.section-intro {
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    font-size: 1.05rem;
+}
+
+/* ===== Recipe Cards ===== */
+.recipes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.recipe-card {
+    background: var(--background);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary-color);
+}
+
+.recipe-image {
+    height: 150px;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.recipe-image i {
+    font-size: 3rem;
+    color: white;
+}
+
+.recipe-content {
+    padding: 1.25rem;
+}
+
+.recipe-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.recipe-meta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.recipe-meta i {
+    margin-right: 0.25rem;
+    color: var(--primary-color);
+}
+
+.recipe-desc {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.recipe-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+/* ===== Responsive for Recipe Grid ===== */
+@media (max-width: 768px) {
+    .recipes-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .page-section {
+        padding-top: 80px;
+    }
+}
