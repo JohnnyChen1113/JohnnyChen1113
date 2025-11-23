@@ -155,9 +155,12 @@ a {
 
 .avatar-photo img {
     width: 100%;
-    height: 100%;
+    height: auto;
+    min-height: 100%;
     object-fit: cover;
-    object-position: center top;
+    object-position: center 15%;
+    transform: scale(1.8);
+    transform-origin: center 25%;
 }
 
 .hero-text {
