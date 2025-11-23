@@ -68,4 +68,59 @@ document.addEventListener('DOMContentLoaded', function() {
             navbar.style.boxShadow = 'none';
         }
     });
+
+    // ===== Publication Filter Functionality =====
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const publications = document.querySelectorAll('.publication-item');
+    const yearDividers = document.querySelectorAll('.year-divider');
+
+    if (filterBtns.length > 0) {
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Update active button
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const filter = btn.getAttribute('data-filter');
+
+                // Filter publications
+                publications.forEach(pub => {
+                    const tags = pub.getAttribute('data-tags') || '';
+                    if (filter === 'all' || tags.includes(filter)) {
+                        pub.classList.remove('hidden');
+                    } else {
+                        pub.classList.add('hidden');
+                    }
+                });
+
+                // Update year dividers visibility
+                updateYearDividers();
+            });
+        });
+    }
+
+    // Function to update year dividers based on visible publications
+    function updateYearDividers() {
+        yearDividers.forEach(divider => {
+            const year = divider.getAttribute('data-year');
+            // Find all publications in this year section
+            let nextElement = divider.nextElementSibling;
+            let hasVisiblePub = false;
+
+            while (nextElement && !nextElement.classList.contains('year-divider')) {
+                if (nextElement.classList.contains('publication-item') &&
+                    !nextElement.classList.contains('hidden')) {
+                    hasVisiblePub = true;
+                    break;
+                }
+                nextElement = nextElement.nextElementSibling;
+            }
+
+            if (hasVisiblePub) {
+                divider.classList.remove('hidden');
+            } else {
+                divider.classList.add('hidden');
+            }
+        });
+    }
 });
