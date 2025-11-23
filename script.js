@@ -1,5 +1,5 @@
 // ===== Navigation Functionality =====
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Mobile Navigation Toggle
     const hamburger = document.querySelector('.hamburger');
     const navMenu = document.querySelector('.nav-menu');
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Smooth scroll for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
+        anchor.addEventListener('click', function (e) {
             e.preventDefault();
             const target = document.querySelector(this.getAttribute('href'));
             if (target) {
@@ -68,4 +68,81 @@ document.addEventListener('DOMContentLoaded', function() {
             navbar.style.boxShadow = 'none';
         }
     });
+
+    // ===== Publication Filtering =====
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const pubItems = document.querySelectorAll('.publication-item');
+    const pubList = document.querySelector('.publications-list');
+
+    if (filterBtns.length > 0 && pubItems.length > 0) {
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Update active button
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const filterValue = btn.getAttribute('data-filter');
+
+                // Filter items
+                pubItems.forEach(item => {
+                    if (filterValue === 'all') {
+                        item.classList.remove('hidden');
+                    } else {
+                        const tags = item.getAttribute('data-tags');
+                        if (tags) {
+                            const tagList = tags.split(' ');
+                            if (tagList.includes(filterValue)) {
+                                item.classList.remove('hidden');
+                            } else {
+                                item.classList.add('hidden');
+                            }
+                        } else {
+                            item.classList.add('hidden');
+                        }
+                    }
+                });
+
+                // Handle Year Dividers visibility
+                updateYearDividers();
+            });
+        });
+    }
+
+    function updateYearDividers() {
+        if (!pubList) return;
+
+        const children = Array.from(pubList.children);
+        let currentDivider = null;
+        let visibleCount = 0;
+
+        children.forEach((child, index) => {
+            if (child.classList.contains('year-divider')) {
+                // Process previous divider
+                if (currentDivider) {
+                    if (visibleCount === 0) {
+                        currentDivider.classList.add('hidden');
+                    } else {
+                        currentDivider.classList.remove('hidden');
+                    }
+                }
+
+                // Start new group
+                currentDivider = child;
+                visibleCount = 0;
+            } else if (child.classList.contains('publication-item')) {
+                if (!child.classList.contains('hidden')) {
+                    visibleCount++;
+                }
+            }
+        });
+
+        // Process last divider
+        if (currentDivider) {
+            if (visibleCount === 0) {
+                currentDivider.classList.add('hidden');
+            } else {
+                currentDivider.classList.remove('hidden');
+            }
+        }
+    }
 });
