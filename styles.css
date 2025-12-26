@@ -321,9 +321,15 @@ a {
 
 .project-header {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.25rem;
     margin-bottom: 0.75rem;
+}
+
+.project-meta {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    font-weight: 400;
 }
 
 .project-title {
@@ -352,6 +358,16 @@ a {
     font-size: 0.95rem;
     margin-bottom: 0.75rem;
     line-height: 1.6;
+}
+
+.project-outcome {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
+    padding: 0.5rem 0.75rem;
+    background: var(--surface);
+    border-left: 3px solid var(--primary-color);
+    border-radius: 0 4px 4px 0;
 }
 
 .project-tags {
