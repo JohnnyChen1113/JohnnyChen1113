@@ -300,7 +300,7 @@ async function loadRecipes(containerSelector, basePath = 'content/recipes') {
 
     try {
         // Fetch the index file
-        const indexResponse = await fetch(`${basePath}/_index.json`);
+        const indexResponse = await fetch(`${basePath}/index.json`);
         if (!indexResponse.ok) throw new Error('Failed to load recipe index');
         const recipeFiles = await indexResponse.json();
 

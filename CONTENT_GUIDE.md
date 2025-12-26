@@ -92,7 +92,7 @@ python -m http.server 8000
 ### 添加新菜谱
 
 1. 创建新文件 `content/recipes/recipe-name.md`
-2. 把文件名添加到 `content/recipes/_index.json`
+2. 把文件名添加到 `content/recipes/index.json`
 
 ### 菜谱文件格式
 
@@ -139,7 +139,7 @@ summary: 简短描述（显示在卡片上）
 | `tags` | 标签数组 |
 | `summary` | 简短描述，显示在列表页卡片上 |
 
-### _index.json 格式
+### index.json 格式
 
 ```json
 [
@@ -169,7 +169,7 @@ content/
   projects.md           <- 所有项目
   tools.md              <- 所有工具和数据库
   recipes/
-    _index.json         <- 菜谱文件列表
+    index.json          <- 菜谱文件列表
     milk-egg-mash.md    <- 单个菜谱
     ...
 ```
@@ -185,4 +185,4 @@ A: 确保使用 `python -m http.server` 启动了本地服务器。
 A: 检查 Markdown 格式，特别是 `## ` 标题和 `---` 分隔符。
 
 **Q: 新菜谱没有显示**
-A: 确认已将文件名添加到 `_index.json`。
+A: 确认已将文件名添加到 `index.json`。

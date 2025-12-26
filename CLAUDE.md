@@ -74,7 +74,7 @@ Description here.
 
 **New recipe**:
 1. Create `content/recipes/recipe-name.md` with YAML frontmatter
-2. Add filename to `content/recipes/_index.json`
+2. Add filename to `content/recipes/index.json`
 
 **New publication**: Add to `publications.html` with appropriate `data-tags` attribute
 
