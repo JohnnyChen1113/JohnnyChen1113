@@ -33,32 +33,9 @@
     <!-- Recipe Section -->
     <section class="section page-section">
         <div class="container">
-            <h2 class="section-title">My Recipes</h2>
-            <p class="section-intro">A collection of my favorite recipes. Cooking is one of my hobbies outside of
-                research!</p>
-
-            <div class="recipes-grid">
-                <!-- Milk Egg Fermented Rice Wine -->
-                <div class="recipe-card">
-                    <div class="recipe-image">
-                        <i class="fas fa-mug-hot"></i>
-                    </div>
-                    <div class="recipe-content">
-                        <h4 class="recipe-title"><a href="recipes/milk-egg-mash.html"
-                                style="text-decoration: none; color: inherit;">Milk Egg Fermented Rice Wine</a></h4>
-                        <div class="recipe-meta">
-                            <span><i class="fas fa-clock"></i> 15 min</span>
-                            <span><i class="fas fa-signal"></i> Easy</span>
-                        </div>
-                        <p class="recipe-desc">A traditional Chinese dessert soup. Sweet, comforting, and nutritious.
-                            Perfect for breakfast or a late-night snack.</p>
-                        <div class="recipe-tags">
-                            <span class="tag">Dessert</span>
-                            <span class="tag">Chinese</span>
-                            <span class="tag">Comfort Food</span>
-                        </div>
-                    </div>
-                </div>
+            <!-- Content loaded dynamically -->
+            <div id="recipe-container">
+                <p class="loading">Loading...</p>
             </div>
         </div>
     </section>
@@ -71,6 +48,30 @@
     </footer>
 
     <script src="script.js"></script>
+    <!-- Markdown rendering -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="markdown-renderer.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const recipeId = urlParams.get('id');
+
+            if (recipeId) {
+                // Show single recipe detail
+                MarkdownRenderer.loadRecipeDetail('#recipe-container', recipeId);
+            } else {
+                // Show recipe list with intro
+                document.querySelector('#recipe-container').innerHTML = `
+                    <h2 class="section-title">My Recipes</h2>
+                    <p class="section-intro">A collection of my favorite recipes. Cooking is one of my hobbies outside of research!</p>
+                    <div class="recipes-grid" id="recipes-grid">
+                        <p class="loading">Loading recipes...</p>
+                    </div>
+                `;
+                MarkdownRenderer.loadRecipes('#recipes-grid');
+            }
+        });
+    </script>
 </body>
 
 </html>
