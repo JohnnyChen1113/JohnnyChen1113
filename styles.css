@@ -1,9 +1,9 @@
-/* ===== CSS Variables - Academic White & Blue Theme ===== */
+/* ===== CSS Variables - SLU Blue Theme ===== */
 :root {
-    --primary-color: #1e40af;
-    --primary-light: #3b82f6;
-    --primary-dark: #1e3a8a;
-    --secondary-color: #0ea5e9;
+    --primary-color: #003da5;
+    --primary-light: #1f6fd6;
+    --primary-dark: #002a72;
+    --secondary-color: #2e8bda;
     --background: #ffffff;
     --background-alt: #f8fafc;
     --surface: #f1f5f9;
